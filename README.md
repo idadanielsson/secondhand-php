@@ -2,21 +2,30 @@
 
 För att bygga secondhand-butiken har php och PHPMyAdmin använts. Projektet är byggt med REST API för att visa samt addera säljare produkter och det outputas i JSON.
 
-Installation:
-Klona git-repo:
+# Användning
 
 Använd exempelvis Postman för GET/POST/PUT
 
-GET:
+## GET:
+
 Hämta alla säljare:
-/sellers
+http://localhost:8888/second-hand-shop/?action=sellers
 
 Hämta en säljare med produkter:
-/sellers-id&id={id}
+http://localhost:8888/second-hand-shop/?action=sellers-id&id={id}
 
-POST:
+Hämta alla produkter:
+http://localhost:8888/second-hand-shop/?action=products
+
+Hämta en produkt:
+http://localhost:8888/second-hand-shop/?action=products-id&id={id}
+
+## POST:
+
+I postman välj POST > Body > Raw > JSON
+
 Lägga till säljare:
-/add-seller
+http://localhost:8888/second-hand-shop/?action=add-seller
 
 {
 "firstname":string,
@@ -25,7 +34,7 @@ Lägga till säljare:
 }
 
 Lägga till en produkt:
-/add-product
+http://localhost:8888/second-hand-shop/?action=add-product
 
 {
 "name": string,
@@ -36,9 +45,12 @@ Lägga till en produkt:
 "size_id": int
 }
 
-PUT:
+## PUT:
+
+I postman välj PUT > Body > Raw > JSON
+
 Markera produkt som såld:
-/update-product
+http://localhost:8888/second-hand-shop/?action=update-product
 
 {
 "id":int

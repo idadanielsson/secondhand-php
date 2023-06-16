@@ -1,6 +1,6 @@
 # secondhand-php
 
-För att bygga secondhand-butiken har php och PHPMyAdmin använts. Projektet är byggt med REST API för att visa samt addera säljare produkter och det outputas i JSON.
+För att bygga secondhand-butiken har php och PHPMyAdmin använts. Projektet är byggt med REST API för att visa samt addera säljare och produkter och det outputas i JSON.
 
 # Användning
 
